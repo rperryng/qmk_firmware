@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+qmk config user.keyboard=ergodox_ez/glow
+qmk config user.keymap=rperryng
