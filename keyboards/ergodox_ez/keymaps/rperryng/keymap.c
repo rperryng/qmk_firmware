@@ -68,7 +68,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     KC_LALT,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_LALT,                                                                                    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_RCTRL,
                                                                            KC_AUDIO_MUTE,  KC_VOLU,     KC_MPRV,        KC_MSTP,
                                                                                            KC_VOLD,     KC_MPLY,
-                                                                MO(4),     KC_LGUI,        KC_LGUI,     KC_SWSCH,       LT(5,KC_ENTER), LT(4,KC_SPACE)
+                                                                MO(4),     KC_LGUI,        KC_LGUI,     KC_WSWCH,       LT(5,KC_ENTER), LT(4,KC_SPACE)
   ),
 
   [1] = LAYOUT_ergodox_pretty(
@@ -90,7 +90,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,                                                                                    TO(0),      KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,
                                                                             KC_TRNS,       KC_TRNS,     KC_TRNS,        KC_TRNS,
                                                                                            KC_TRNS,     KC_TRNS,
-                                                                KC_SPACE,   KC_TRNS,       KC_TRNS,     KC_TRNS,        KC_TRNS,    KC_TRANSPARENT
+                                                                KC_SPACE,   KC_TRNS,       KC_TRNS,     KC_TRNS,        KC_TRNS,    KC_TRNS
   ),
 
   [3] = LAYOUT_ergodox_pretty(
@@ -101,35 +101,35 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,                                                                                    TO(0),      KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,
                                                                             KC_TRNS,       KC_TRNS,     KC_TRNS,        KC_TRNS,
                                                                                            KC_TRNS,     KC_TRNS,
-                                                                KC_TRNS,    KC_TRNS,       KC_TRNS,     KC_TRNS,        KC_TRNS,    KC_TRANSPARENT
+                                                                KC_TRNS,    KC_TRNS,       KC_TRNS,     KC_TRNS,        KC_TRNS,    KC_TRNS
   ),
 
   [4] = LAYOUT_ergodox_pretty(
-    KC_TRNS,    TO(0),      TO(3),      KC_TRNS,    TO(5),      TO(6),      LGUI(LCTL(LSFT(KC_4))),                            KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    LALT(KC_F4),
-    KC_TRNS,    KC_1,       KC_2,       KC_3,       KC_4,       KC_5,       KC_TRNS,                                        KC_,        KC_         KC_         KC_         KC_         KC_         KC_TE,
-    KC_TRNS,    KC_LPRN,    KC_RPRN,    KC_LCBR,    KC_RCBR,    KC_TRNS,                                                                KC_,        KC_S,       KC_,        KC_,        KC_L,       TO(
-    KC_TRNS,    KC_LBRACKET,KC_RBRACKET,KC_LABK,    KC_RABK,    KC_TRNS,    KC_TRNS,                                        KC_,        KC_,        KC_E,       KC_E,       KC_,        KC_SH,      KC_,
-    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,                                                                                        TO(         KC_,        KC_,        KC_,        KC_,
-                                                                            KC_TRNS,       KC_TRNS,     KC_TRNS,        KC_TRNS,
-                                                                                           KC_TRNS,     KC_TRNS,
-                                                                KC_TRNS,    KC_TRNS,       KC_TRNS,     KC_TRNS,        KC_TRNS,    KC_TRANSPARENT
+    KC_TRNS,    TO(0),      TO(3),      KC_TRNS,     TO(5),     TO(6),      LGUI(LCTL(LSFT(KC_4))),                     KC_TRNS,   KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    LALT(KC_F4),
+    KC_TRNS,    KC_1,       KC_2,       KC_3,        KC_4,      KC_5,       KC_TRNS,                                    KC_TRNS,   KC_6,       KC_7,       KC_8,       KC_9,       KC_0,       KC_DELETE,
+    KC_TRNS,    KC_LPRN,    KC_RPRN,    KC_LCBR,     KC_RCBR,   KC_TRNS,                                                           KC_PLUS,    KC_MINUS,   KC_UNDS,    KC_PIPE,    KC_EQUAL,   TO(0),
+    KC_TRNS,    KC_LBRACKET,KC_RBRACKET,KC_LABK,     KC_RABK,   KC_TRNS,    KC_TRNS,                                    KC_TRNS,   KC_TILD,    KC_GRAVE,   KC_QUOTE,   KC_DQUO,    KC_BSLASH,  KC_TRNS,
+    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,     KC_TRNS,                                                                                  TO(0),      KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,
+                                                                            KC_TRNS,       KC_TRNS,      KC_TRNS,       KC_TRNS,
+                                                                                           KC_TRNS,      KC_TRNS,
+                                                                            KC_TRNS,       KC_TRNS,      KC_TRNS,       KC_TRNS,   KC_TRNS,    KC_TRNS
   ),
 
   [5] = LAYOUT_ergodox_pretty(
     KC_TRNS,    TO(0),      TO(3),      TO(4),      KC_TRNS,    TO(6),      KC_TRNS,                                    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,
     KC_TRNS,    KC_TRNS,    RGB_HUD,    RGB_HUI,    RGB_VAD,    RGB_VAI,    KC_TRNS,                                    KC_TRNS,    KC_HOME,    KC_PGDOWN,  KC_PGUP,    KC_END,     KC_TRNS,    KC_TRNS,
     KC_TRNS,    KC_TRNS,    RGB_MOD,    RGB_SLD,    KC_TRNS,    KC_TRNS,                                                            KC_LEFT,    KC_DOWN,    KC_UP,      KC_RIGHT,   KC_PAUSE,   TO(0),
-    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,                                    KC_TRNS,    KC_MEDIA_PREACK,KC_AUDIO_DOWN,KC_AUDOL_UP,KC_MEDEXT_TRACK,KCIA_PLAY_PAUSE,KC_TRNS,
+    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,                                    KC_TRNS,    KC_MPRV,    KC_VOLD,    KC_VOLU,    KC_MNXT,    KC_MPLY,    KC_TRNS,
     KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,                                                                                    TO(0),      KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,
                                                                             KC_TRNS,       KC_TRNS,     KC_TRNS,        KC_TRNS,
                                                                                            KC_TRNS,     KC_TRNS,
-                                                                KC_TRNS,    KC_TRNS,       KC_TRNS,     KC_TRNS,        KC_TRNS,    KC_TRANSPARENT
+                                                                KC_TRNS,    KC_TRNS,       KC_TRNS,     KC_TRNS,        KC_TRNS,    KC_TRNS
   ),
 
   [6] = LAYOUT_ergodox_pretty(
     KC_TRNS,    TO(0),      TO(3),      TO(4),      TO(5),      KC_TRNS,    KC_TRNS,                                    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,
     KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_MS_UP,   KC_TRNS,    KC_TRNS,    KC_TRNS,                                    KC_TRNS,    KC_NO,      KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,
-    KC_TRNS,    KC_TRNS,    KC_MS_LEFT, KC_MS_DOWN, KC_MS_RIGHT,KC_TRNS,                                                            KC_MS_WH_LEFKC_MS_WH_DOWKC_MS_WH_UP,KC_MS_WH_RIGKC_TRNS,    TO(0),
+    KC_TRNS,    KC_TRNS,    KC_MS_LEFT, KC_MS_DOWN, KC_MS_RIGHT,KC_TRNS,                                                            KC_WH_L,    KC_WH_D,    KC_WH_U,    KC_WH_R,    KC_TRNS,    TO(0),
     KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,                                    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,
     KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,                                                                                    TO(0),      KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,
                                                                             KC_TRNS,       KC_TRNS,     KC_TRNS,        KC_TRNS,
@@ -145,7 +145,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,                                                                                    TO(0),      KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,
                                                                             KC_TRNS,       KC_TRNS,     KC_TRNS,        KC_TRNS,
                                                                                            KC_TRNS,     KC_TRNS,
-                                                                KC_TRNS,    KC_TRNS,       KC_TRNS,     KC_TRNS,        KC_TRNS,    KC_TRANSPARENT
+                                                                KC_TRNS,    KC_TRNS,       KC_TRNS,     KC_TRNS,        KC_TRNS,    KC_TRNS
   ),
   [8] = LAYOUT_ergodox_pretty(
     KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,                                    TO(0),      KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,
@@ -155,7 +155,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,                                                                                    TO(0),      KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,
                                                                             KC_TRNS,       KC_TRNS,     KC_TRNS,        KC_TRNS,
                                                                                            KC_TRNS,     KC_TRNS,
-                                                                KC_TRNS,    KC_TRNS,       KC_TRNS,     KC_TRNS,        KC_TRNS,    KC_TRANSPARENT
+                                                                KC_TRNS,    KC_TRNS,       KC_TRNS,     KC_TRNS,        KC_TRNS,    KC_TRNS
   ),
 };
 
@@ -322,5 +322,3 @@ uint32_t layer_state_set_user(uint32_t state) {
   }
   return state;
 };
-
-
