@@ -13,6 +13,7 @@
     "mouse_key": {
         "enabled": false
     },
+    "pin_compatible": "promicro",
     "processor": "atmega32u4",
     "rgb_matrix": {
         "driver": "ws2812"
